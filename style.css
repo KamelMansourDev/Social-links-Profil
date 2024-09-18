@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+   
+    --fontbolder: 700;
+    --fontsemibold: 600;
+    --fontsmall:  400;
+}
+body {
+    font-family: "inter", "sans-serif";
+    background-color: var(--Grey900);
+    overflow: auto;
+}
+.container {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+ .content {
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Grey800);
+    height: 29.5rem;
+    flex-direction: column;
+    width: 320px;
+} 
+@media (max-width: 576px) {
+    body {
+        min-height: 100vh;
+    }
+
+    .content {
+        width: 18rem;
+        height: auto;
+    }
+
+    .list a {
+        width: 100%;
+    }
+    
+    
+    .title h2 {
+        font-size: 1.2rem;
+    }
+
+    .title p {
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
+    .descrption p {
+        font-size: 12px;
+        margin: 0.3rem 0;
+    }
+
+    .image img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .list a {
+        font-size: 12px;
+        width: 100%;
+        padding: 8px;
+    }
+
+    .list a:hover {
+        background-color: var(--Green);
+    }
+}
+.title h2 {
+    color: var(--White);
+    font-weight: var(--fontsemibold);
+    font-size: 1.4rem;
+}
+.title p {
+    font-size: 14px;
+    color: var(--Green);
+    font-weight: var(--fontsemibold);
+    margin-top: 8px;
+    text-align: center;
+}
+.descrption p {
+    font-size: 13px;
+    color: var(--White);
+    font-weight: var(--fontsmall);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+ .image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.links .list{
+    list-style: none;
+}
+.list a{
+    text-decoration: none;
+    background-color: var(--Grey700);
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 8px;
+    padding: 9px;
+    width: 250px;
+    font-size: 14px;
+    font-weight: var(--fontsemibold);
+    text-align: center;
+}
+.list a:hover {
+    background-color: var(--Green);
+    color: var(--Grey900);
+}
